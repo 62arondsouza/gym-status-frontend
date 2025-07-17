@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const API = 'http://localhost:8080';
+const API = import.meta.env.VITE_API_BASE_URL;
 
 function MemberPage() {
   const [count, setCount] = useState(0);
